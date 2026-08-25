@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>SmartTest - Ujian Digital Fleksibel</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0b3d91,#1464c4);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.logo{
+    font-size:48px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#ffd43b;
+}
+
+.tagline{
+    font-size:22px;
+    margin-top:10px;
+    opacity:.95;
+}
+
+.hero-text{
+    max-width:800px;
+    margin:25px auto 0;
+    font-size:18px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#ffd43b;
+    color:#222;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* SECTION */
+
+.section-title{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:32px;
+    color:#0b3d91;
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 35px;
+    color:#555;
+}
+
+/* STATISTICS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:50px;
+}
+
+.stat{
+    background:white;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.stat-number{
+    font-size:30px;
+    font-weight:bold;
+    color:#0b3d91;
+}
+
+.stat-text{
+    color:#666;
+    margin-top:8px;
+}
+
+/* FEATURE */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.feature h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+/* HIGHLIGHT */
+
+.highlight{
+    background:#0b3d91;
+    color:white;
+    padding:45px 25px;
+    text-align:center;
+    margin:40px 0;
+    border-radius:15px;
+}
+
+.highlight h2{
+    margin-bottom:15px;
+}
+
+.highlight-text{
+    font-size:22px;
+    max-width:850px;
+    margin:auto;
+}
+
+/* INFOGRAPHIC */
+
+.infographic{
+    text-align:center;
+    margin-top:30px;
+}
+
+.infographic img{
+    max-width:100%;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+/* PROCESS */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.step-number{
+    width:50px;
+    height:50px;
+    background:#0b3d91;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+    margin:0 auto 15px;
+}
+
+/* RESULT */
+
+.result-options{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.result{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.result h3{
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+
+/* OPEN LETTER */
+
+.letter{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.letter p{
+    max-width:800px;
+    margin:15px auto;
+}
+
+/* FOOTER */
+
+footer{
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .logo{
+        font-size:38px;
+    }
+
+    .tagline{
+        font-size:18px;
+    }
+
+    .stats,
+    .features,
+    .process,
+    .result-options{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+    .highlight-text{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+SMART<span>TEST</span>
+</div>
+
+<div class="tagline">
+Ujian Digital yang Fleksibel
+</div>
+
+<p class="hero-text">
+
+SmartTest adalah sebuah pendekatan ujian digital
+yang dirancang agar pelaksanaan ujian tidak harus
+bergantung terus-menerus pada server, internet,
+WiFi, maupun jaringan lokal.
+
+</p>
+
+<a href="#tentang" class="btn">
+Kenali SmartTest
+</a>
+
+</header>
+
+
+<!-- DATA PENGGUNAAN -->
+
+<div class="container">
+
+<h2 class="section-title">
+SmartTest dalam Penggunaan Nyata
+</h2>
+
+<p class="section-subtitle">
+
+SmartTest bukan sekadar konsep.
+Sistem ini telah digunakan dalam pelaksanaan ujian nyata
+di beberapa sekolah dan terus dikembangkan berdasarkan
+pengalaman penggunaan.
+
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+
+<div class="stat-number">
+Beberapa Sekolah
+</div>
+
+<div class="stat-text">
+Telah menggunakan SmartTest dalam pelaksanaan ujian nyata
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+1+ Tahun
+</div>
+
+<div class="stat-text">
+Digunakan dan terus dikembangkan berdasarkan pengalaman nyata
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+Ratusan – ±1.900
+</div>
+
+<div class="stat-text">
+Skala peserta dalam pelaksanaan ujian
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TENTANG -->
+
+<section id="tentang">
+
+<h2 class="section-title">
+Apa Itu SmartTest?
+</h2>
+
+<p class="section-subtitle">
+
+SmartTest adalah sistem ujian digital dengan pendekatan
+yang berbeda. Soal tidak harus terus-menerus diambil dari
+server selama ujian berlangsung.
+
+Perangkat soal dapat dipersiapkan terlebih dahulu,
+kemudian digunakan langsung pada perangkat peserta.
+
+</p>
+
+
+<div class="features">
+
+<div class="feature">
+
+<h3>
+📦 Perangkat Soal Lengkap
+</h3>
+
+<p>
+
+Soal, kunci jawaban, token, dan informasi yang diperlukan
+diproses menjadi perangkat soal SmartTest yang siap digunakan.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>
+📱 Dikerjakan di HP Peserta
+</h3>
+
+<p>
+
+Setelah perangkat soal tersedia, peserta dapat
+mengerjakan ujian langsung pada perangkat masing-masing.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>
+🌐 Tanpa Internet
+</h3>
+
+<p>
+
+Pelaksanaan ujian tidak harus bergantung pada
+ketersediaan koneksi internet.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>
+📶 Tanpa WiFi atau Jaringan Lokal
+</h3>
+
+<p>
+
+Peserta tidak harus terus terhubung ke WiFi,
+LAN, atau jaringan lokal selama mengerjakan soal.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>
+🖥 Tidak Bergantung pada Server
+</h3>
+
+<p>
+
+Server tidak harus terus-menerus melayani
+permintaan soal dari seluruh peserta selama ujian berlangsung.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>
+⚡ Tetap Berjalan Saat Listrik Padam
+</h3>
+
+<p>
+
+Selama HP peserta masih memiliki daya dan dapat menyala,
+peserta tetap dapat melanjutkan pengerjaan ujian.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PESAN UTAMA -->
+
+<div class="highlight">
+
+<h2>
+Sebuah Pendekatan Sederhana
+</h2>
+
+<p class="highlight-text">
+
+<strong>
+Soal dibawa ke perangkat peserta.
+</strong>
+
+<br><br>
+
+Peserta mengerjakan secara mandiri.
+
+<br><br>
+
+Hasil dikumpulkan sesuai dengan kondisi
+dan fasilitas yang tersedia.
+
+</p>
+
+</div>
+
+
+<!-- INFOGRAFIS -->
+
+<div class="container">
+
+<h2 class="section-title">
+Bagaimana SmartTest Bekerja?
+</h2>
+
+<p class="section-subtitle">
+
+Berikut gambaran sederhana proses pembuatan,
+pelaksanaan, dan pengumpulan hasil ujian menggunakan SmartTest.
+
+</p>
+
+
+<div class="infographic">
+
+<img src="brosur-oke.png"
+alt="Infografis SmartTest">
+
+</div>
+
+</div>
+
+
+<!-- PROSES -->
+
+<div class="container">
+
+<h2 class="section-title">
+Proses Pelaksanaan
+</h2>
+
+
+<div class="process">
+
+<div class="step">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Siapkan Soal
+</h3>
+
+<p>
+
+Soal dan kunci jawaban diproses menjadi
+perangkat soal SmartTest.
+
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+Bagikan ke Peserta
+</h3>
+
+<p>
+
+Perangkat soal dapat dibagikan menggunakan
+cara yang sesuai dengan kondisi yang tersedia.
+
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Kerjakan & Kumpulkan
+</h3>
+
+<p>
+
+Peserta mengerjakan soal secara mandiri
+dan hasil dikumpulkan melalui metode yang tersedia.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PENGUMPULAN HASIL -->
+
+<div class="container">
+
+<h2 class="section-title">
+Fleksibel dalam Pengumpulan Hasil
+</h2>
+
+<p class="section-subtitle">
+
+Meskipun peserta dapat mengerjakan ujian tanpa internet
+maupun jaringan WiFi, hasil ujian tetap dapat dikumpulkan
+melalui beberapa pilihan.
+
+</p>
+
+
+<div class="result-options">
+
+
+<div class="result">
+
+<h3>
+📷 QR Code
+</h3>
+
+<p>
+
+Hasil ujian dapat dikumpulkan tanpa internet
+melalui QR Code menggunakan perangkat guru.
+
+</p>
+
+</div>
+
+
+<div class="result">
+
+<h3>
+📡 Mini Server WiFi
+</h3>
+
+<p>
+
+Jika tersedia hotspot atau jaringan lokal,
+hasil dapat dikirim melalui jaringan tersebut.
+
+</p>
+
+</div>
+
+
+<div class="result">
+
+<h3>
+🌐 Server Online
+</h3>
+
+<p>
+
+Jika internet tersedia, hasil dapat
+dikirim ke server SmartTest.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BUKTI PENGGUNAAN -->
+
+<div class="container">
+
+<h2 class="section-title">
+Telah Digunakan dalam Ujian Nyata
+</h2>
+
+<div class="letter">
+
+<p>
+
+SmartTest telah digunakan dalam pelaksanaan ujian nyata
+di beberapa sekolah selama lebih dari satu tahun.
+
+</p>
+
+<p>
+
+Penggunaannya dilakukan dalam berbagai skala,
+mulai dari pelaksanaan ujian dengan ratusan peserta
+hingga sekitar 1.900 siswa dalam satu sekolah.
+
+</p>
+
+<p>
+
+Penggunaan tersebut bukan sekadar demonstrasi atau simulasi,
+tetapi digunakan dalam pelaksanaan ujian yang sebenarnya
+dan terus dikembangkan berdasarkan pengalaman penggunaan.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SURAT TERBUKA -->
+
+<div class="container">
+
+<div class="letter">
+
+<h2 class="section-title">
+Surat Terbuka
+</h2>
+
+<p>
+
+SmartTest lahir dari perjalanan lebih dari
+sepuluh tahun mencoba berbagai pendekatan
+dalam membangun sistem ujian digital.
+
+</p>
+
+<p>
+
+Mulai dari sistem berbasis server,
+internet, hingga jaringan lokal.
+
+Dari perjalanan tersebut muncul sebuah gagasan:
+
+</p>
+
+<h3 style="margin:25px 0;color:#0b3d91;">
+
+"Bagaimana jika perangkat soal dibuat lengkap
+dan dibawa langsung ke perangkat peserta?"
+
+</h3>
+
+<p>
+
+Baca perjalanan lengkap dan gagasan di balik SmartTest
+melalui Surat Terbuka.
+
+</p>
+
+<a href="surat-terbuka.html"
+class="btn">
+
+📖 Baca Surat Terbuka
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+SMARTTEST
+</h2>
+
+<p>
+Ujian Tertib, Pengumpulan Cepat, Nilai Akurat
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Yudi Suryawan
+</p>
+
+</footer>
+
+
+</body>
+</html>

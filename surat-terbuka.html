@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Surat Terbuka - SmartTest</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f6f9;
+    color:#222;
+    line-height:1.8;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0b3d91,#1464c4);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#ffd43b;
+}
+
+.subtitle{
+    margin-top:10px;
+    font-size:18px;
+    opacity:.9;
+}
+
+/* NAV */
+
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#0b3d91;
+    font-weight:bold;
+    margin:0 15px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+/* LETTER */
+
+.letter{
+    background:white;
+    padding:55px;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,.10);
+}
+
+.title{
+    text-align:center;
+    color:#0b3d91;
+    font-size:34px;
+    line-height:1.3;
+}
+
+.title-small{
+    text-align:center;
+    color:#666;
+    font-size:20px;
+    margin-top:15px;
+}
+
+.to{
+    margin-top:50px;
+}
+
+p{
+    margin:20px 0;
+}
+
+h2{
+    color:#0b3d91;
+    margin-top:50px;
+    line-height:1.4;
+}
+
+.highlight{
+    background:#eef4ff;
+    border-left:6px solid #0b3d91;
+    padding:25px;
+    margin:30px 0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.quote{
+    background:#0b3d91;
+    color:white;
+    padding:30px;
+    text-align:center;
+    font-size:21px;
+    border-radius:12px;
+    margin:35px 0;
+}
+
+.stat-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin:35px 0;
+}
+
+.stat{
+    background:#f4f6f9;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+}
+
+.number{
+    font-size:26px;
+    font-weight:bold;
+    color:#0b3d91;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin:10px 0;
+}
+
+/* BUTTON */
+
+.button-area{
+    text-align:center;
+    margin-top:50px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0b3d91;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+/* SIGNATURE */
+
+.signature{
+    margin-top:50px;
+}
+
+.name{
+    font-size:22px;
+    font-weight:bold;
+    color:#0b3d91;
+}
+
+/* FOOTER */
+
+footer{
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .letter{
+        padding:30px 20px;
+    }
+
+    .title{
+        font-size:27px;
+    }
+
+    .stat-box{
+        grid-template-columns:1fr;
+    }
+
+    .logo{
+        font-size:32px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 10px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+SMART<span>TEST</span>
+</div>
+
+<div class="subtitle">
+Surat Terbuka
+</div>
+
+</header>
+
+
+<nav>
+
+<a href="index.html">
+← Kembali ke SmartTest
+</a>
+
+<a href="#surat">
+Baca Surat
+</a>
+
+</nav>
+
+
+<div class="container">
+
+<article class="letter" id="surat">
+
+
+<h1 class="title">
+SURAT TERBUKA
+</h1>
+
+<div class="title-small">
+
+Lebih dari Sepuluh Tahun Mencari Cara
+agar Ujian Digital Tidak Terlalu Bergantung
+pada Server, Internet, dan Jaringan
+
+</div>
+
+
+<div class="to">
+
+<strong>Kepada Yth.</strong><br>
+
+Bapak/Ibu Pejabat Pemerintah,<br>
+Pimpinan Daerah, dan Pemerhati Pendidikan<br>
+di Indonesia
+
+</div>
+
+
+<p>
+Dengan hormat,
+</p>
+
+
+<p>
+Perkenalkan, nama saya <strong>Yudi Suryawan</strong>,
+pengembang <strong>SmartTest</strong>.
+</p>
+
+
+<p>
+Selama lebih dari sepuluh tahun, saya mencoba mencari cara
+untuk membuat pelaksanaan ujian digital menjadi lebih sederhana,
+fleksibel, dan tidak terlalu bergantung pada kemampuan server,
+kestabilan internet, maupun jaringan lokal.
+</p>
+
+
+<p>
+Perjalanan tersebut dimulai ketika saya mengembangkan berbagai
+sistem ujian berbasis komputer dan jaringan.
+Saya telah mencoba sistem ujian yang berjalan melalui internet.
+Saya juga mencoba sistem yang berjalan menggunakan jaringan WiFi
+atau jaringan lokal.
+</p>
+
+
+<p>
+Namun, dari berbagai pengalaman tersebut, saya berulang kali
+menghadapi persoalan yang hampir sama.
+</p>
+
+
+<p>
+Ketika soal ditempatkan di server dan diakses secara bersamaan
+oleh banyak peserta, kelancaran ujian sangat bergantung pada
+server dan jaringan.
+</p>
+
+
+<p>
+Semakin banyak peserta yang mengakses sistem dalam waktu bersamaan,
+semakin besar pula kebutuhan terhadap kestabilan server,
+jaringan, bandwidth, dan kemampuan sistem dalam melayani
+banyak permintaan sekaligus.
+</p>
+
+
+<div class="highlight">
+
+Jika internet mengalami gangguan, ujian dapat terganggu.
+
+<br><br>
+
+Jika jaringan WiFi atau jaringan lokal mengalami masalah,
+pelaksanaan ujian juga dapat terganggu.
+
+<br><br>
+
+Jika server mengalami beban tinggi,
+peserta dapat mengalami kesulitan mengakses soal.
+
+</div>
+
+
+<p>
+Dari berbagai pengalaman tersebut, muncul sebuah pertanyaan sederhana:
+</p>
+
+
+<div class="quote">
+
+“Jika banyak peserta mengakses satu server secara bersamaan
+dapat menjadi persoalan, mengapa perangkat soal tidak dibuat lengkap
+dan dibawa langsung ke perangkat masing-masing peserta?”
+
+</div>
+
+
+<p>
+Dari pertanyaan sederhana itulah lahir gagasan yang kemudian
+saya kembangkan menjadi <strong>SmartTest</strong>.
+</p>
+
+
+<h2>
+Sebuah Pendekatan yang Berbeda
+</h2>
+
+
+<p>
+SmartTest menggunakan pendekatan yang berbeda dari sistem ujian
+yang bergantung pada server, internet, atau jaringan WiFi
+selama peserta mengerjakan ujian.
+</p>
+
+
+<p>
+Guru atau pembuat soal dapat menyiapkan sebuah
+<strong>perangkat soal lengkap</strong>.
+Perangkat tersebut berisi soal, kunci jawaban,
+token mata pelajaran, serta informasi yang diperlukan
+dalam pelaksanaan ujian.
+</p>
+
+
+<p>
+Perangkat soal kemudian dapat dibagikan kepada peserta
+dan dibuka menggunakan SmartTest.
+</p>
+
+
+<p>
+Dengan pendekatan ini, setiap peserta memiliki perangkat soal
+pada perangkat masing-masing.
+</p>
+
+
+<div class="highlight">
+
+Peserta tidak perlu terus-menerus mengambil soal dari server.
+
+<br><br>
+
+Peserta tidak harus selalu terhubung ke internet.
+
+<br><br>
+
+Peserta juga tidak harus selalu terhubung ke WiFi
+atau jaringan lokal selama mengerjakan ujian.
+
+</div>
+
+
+<p>
+Setelah perangkat soal tersedia di HP peserta,
+ujian dapat berlangsung secara mandiri
+pada masing-masing perangkat.
+</p>
+
+
+<div class="quote">
+
+Bukan server yang harus terus-menerus
+melayani peserta selama ujian berlangsung.
+
+<br><br>
+
+Perangkat soal sudah berada
+di tangan masing-masing peserta.
+
+</div>
+
+
+<h2>
+Tidak Ada Internet dan Tidak Ada WiFi,
+Ujian Tetap Dapat Berlangsung
+</h2>
+
+
+<p>
+SmartTest tidak hanya dirancang untuk kondisi
+ketika internet tidak tersedia.
+</p>
+
+
+<p>
+SmartTest juga dapat digunakan ketika
+<strong>tidak tersedia jaringan WiFi
+atau jaringan lokal</strong>.
+</p>
+
+
+<p>
+Setelah perangkat soal diterima oleh peserta,
+setiap peserta dapat mengerjakan ujian secara mandiri
+pada perangkat masing-masing.
+</p>
+
+
+<div class="highlight">
+
+Tidak ada internet, ujian tetap dapat berlangsung.
+
+<br><br>
+
+Tidak ada WiFi, ujian tetap dapat berlangsung.
+
+<br><br>
+
+Tidak ada jaringan lokal, ujian tetap dapat berlangsung.
+
+<br><br>
+
+Tidak ada server yang harus terus diakses selama peserta
+mengerjakan soal, ujian tetap dapat berlangsung.
+
+</div>
+
+
+<h2>
+Bahkan Ketika Listrik Padam
+</h2>
+
+
+<p>
+Ada satu kondisi lain yang juga menjadi bagian
+dari pemikiran saya.
+</p>
+
+
+<p>
+Bagaimana jika terjadi gangguan listrik saat ujian berlangsung?
+</p>
+
+
+<p>
+Pada sistem yang bergantung pada komputer server,
+perangkat jaringan, access point, dan sumber listrik,
+gangguan listrik dapat menjadi persoalan besar.
+</p>
+
+
+<p>
+Namun SmartTest dirancang dengan memanfaatkan perangkat
+yang sudah digunakan peserta, yaitu HP.
+</p>
+
+
+<p>
+Selama HP peserta masih memiliki daya dan masih dapat menyala,
+peserta tetap dapat melanjutkan pengerjaan ujian.
+</p>
+
+
+<div class="quote">
+
+Internet tidak ada, ujian tetap dapat berlangsung.
+
+<br><br>
+
+WiFi tidak ada, ujian tetap dapat berlangsung.
+
+<br><br>
+
+Jaringan lokal tidak ada, ujian tetap dapat berlangsung.
+
+<br><br>
+
+Listrik padam, selama HP masih memiliki daya,
+ujian tetap dapat berlangsung.
+
+</div>
+
+
+<h2>
+Bukan Sekadar Gagasan,
+SmartTest Sudah Digunakan
+</h2>
+
+
+<p>
+SmartTest bukan lagi sekadar konsep atau gagasan
+yang belum pernah diterapkan.
+</p>
+
+
+<p>
+Sistem ini telah digunakan dalam pelaksanaan ujian nyata
+di beberapa sekolah selama lebih dari satu tahun.
+</p>
+
+
+<div class="stat-box">
+
+<div class="stat">
+
+<div class="number">
+Beberapa Sekolah
+</div>
+
+SmartTest telah digunakan dalam pelaksanaan ujian nyata
+
+</div>
+
+
+<div class="stat">
+
+<div class="number">
+1+ Tahun
+</div>
+
+Digunakan dan dikembangkan berdasarkan pengalaman nyata
+
+</div>
+
+
+<div class="stat">
+
+<div class="number">
+Ratusan – ±1.900
+</div>
+
+Peserta dalam pelaksanaan ujian
+
+</div>
+
+</div>
+
+
+<p>
+Penggunaannya telah dilakukan dalam berbagai skala,
+mulai dari pelaksanaan ujian dengan ratusan peserta
+hingga sekitar 1.900 siswa dalam satu sekolah.
+</p>
+
+
+<p>
+Penggunaan tersebut bukan sekadar demonstrasi atau simulasi
+dalam skala kecil.
+</p>
+
+
+<p>
+SmartTest telah digunakan dalam pelaksanaan ujian yang sebenarnya
+dan digunakan secara berulang.
+</p>
+
+
+<p>
+Selama penggunaan tersebut, SmartTest terus dikembangkan
+berdasarkan pengalaman nyata dalam pelaksanaan ujian.
+</p>
+
+
+<h2>
+Fleksibel dalam Pengumpulan Hasil
+</h2>
+
+
+<p>
+Meskipun peserta dapat mengerjakan ujian tanpa internet
+maupun jaringan WiFi, hasil ujian tetap dapat dikumpulkan
+melalui beberapa pilihan.
+</p>
+
+
+<ul>
+
+<li>
+<strong>QR Code</strong> — hasil ujian dapat dikumpulkan
+tanpa internet menggunakan perangkat guru.
+</li>
+
+<li>
+<strong>Mini Server WiFi</strong> — apabila tersedia hotspot
+atau jaringan lokal, hasil dapat dikirim melalui jaringan tersebut.
+</li>
+
+<li>
+<strong>Server Online</strong> — apabila internet tersedia,
+hasil dapat dikirim ke server SmartTest.
+</li>
+
+</ul>
+
+
+<h2>
+Lebih dari Sepuluh Tahun Perjalanan,
+Bukan Sekadar Sebuah Ide
+</h2>
+
+
+<p>
+Saya tidak mengatakan bahwa SmartTest adalah sistem yang sempurna.
+Setiap teknologi selalu memiliki ruang untuk diperbaiki
+dan dikembangkan.
+</p>
+
+
+<p>
+Namun, SmartTest bukan sekadar hasil dari sebuah ide
+yang muncul dalam waktu singkat.
+</p>
+
+
+<p>
+Sistem ini lahir dari perjalanan lebih dari sepuluh tahun
+mencoba berbagai pendekatan dalam pelaksanaan ujian digital.
+</p>
+
+
+<p>
+Dari sistem berbasis server.
+Melalui internet.
+Melalui jaringan WiFi.
+Melalui jaringan lokal.
+</p>
+
+
+<p>
+Hingga akhirnya muncul gagasan untuk membuat sebuah
+perangkat soal lengkap yang dapat dibawa langsung
+ke perangkat peserta.
+</p>
+
+
+<h2>
+Harapan Saya Melalui Surat Terbuka Ini
+</h2>
+
+
+<p>
+Melalui surat terbuka ini, saya ingin memperkenalkan SmartTest
+kepada pemerintah, pejabat pendidikan, sekolah, guru,
+dan semua pihak yang memiliki perhatian terhadap
+perkembangan teknologi pendidikan.
+</p>
+
+
+<p>
+Saya tidak meminta agar SmartTest langsung digunakan secara luas.
+</p>
+
+
+<p>
+Saya ingin memperkenalkan sebuah pendekatan yang telah saya
+kembangkan selama bertahun-tahun dan telah digunakan
+dalam pelaksanaan ujian nyata di beberapa sekolah.
+</p>
+
+
+<div class="highlight">
+
+SmartTest telah digunakan di beberapa sekolah.
+
+<br><br>
+
+Digunakan selama lebih dari satu tahun.
+
+<br><br>
+
+Digunakan dalam berbagai skala pelaksanaan ujian.
+
+<br><br>
+
+Mulai dari ratusan peserta hingga sekitar
+1.900 siswa dalam satu sekolah.
+
+</div>
+
+
+<p>
+Harapan saya adalah mendapatkan kesempatan untuk memperlihatkan
+secara langsung bagaimana SmartTest bekerja dan berbagi pengalaman
+dari penerapannya dalam pelaksanaan ujian nyata.
+</p>
+
+
+<p>
+Saya berharap SmartTest dapat:
+</p>
+
+
+<ul>
+
+<li>
+Diperlihatkan kepada pihak-pihak yang memiliki perhatian
+terhadap pendidikan dan teknologi.
+</li>
+
+<li>
+Mendapatkan masukan untuk pengembangan lebih lanjut.
+</li>
+
+<li>
+Dipertimbangkan sebagai salah satu alternatif pendekatan
+dalam pelaksanaan ujian digital.
+</li>
+
+<li>
+Apabila dinilai memiliki manfaat yang lebih luas,
+mendapatkan kesempatan untuk diperkenalkan
+kepada lebih banyak sekolah.
+</li>
+
+</ul>
+
+
+<div class="quote">
+
+Bagaimana membuat ujian digital tetap dapat berjalan
+tanpa terlalu bergantung pada server,
+internet, jaringan WiFi,
+maupun kondisi infrastruktur yang ideal?
+
+<br><br>
+
+SmartTest adalah jawaban
+yang saya coba bangun.
+
+</div>
+
+
+<p>
+SmartTest lahir dari pengalaman lebih dari sepuluh tahun,
+kemudian terus dikembangkan hingga dapat digunakan
+dalam pelaksanaan ujian nyata di beberapa sekolah
+dengan jumlah peserta yang beragam.
+</p>
+
+
+<p>
+Saya berharap perjalanan ini dapat membuka kesempatan
+untuk memperkenalkan SmartTest kepada lebih banyak pihak,
+mendapatkan masukan, serta melihat kemungkinan penerapannya
+secara lebih luas dalam dunia pendidikan.
+</p>
+
+
+<p>
+Saya berharap mendapatkan kesempatan untuk memperlihatkan
+SmartTest secara langsung kepada pihak-pihak yang memiliki
+perhatian terhadap kemajuan pendidikan Indonesia.
+</p>
+
+
+<p>
+Bukan hanya untuk memperkenalkan sebuah aplikasi,
+tetapi untuk berbagi sebuah gagasan yang lahir dari
+lebih dari sepuluh tahun pengalaman,
+kemudian dikembangkan menjadi sistem,
+dan akhirnya digunakan dalam pelaksanaan ujian nyata.
+</p>
+
+
+<p>
+Terima kasih kepada siapa pun yang bersedia membaca,
+melihat, mempelajari, memberikan masukan,
+dan membuka kesempatan untuk memperkenalkan SmartTest.
+</p>
+
+
+<div class="signature">
+
+<p>
+Dengan hormat,
+</p>
+
+<div class="name">
+Yudi Suryawan
+</div>
+
+<p>
+Pengembang SmartTest
+</p>
+
+</div>
+
+
+<div class="button-area">
+
+<a href="index.html" class="btn">
+
+← Kembali ke Halaman SmartTest
+
+</a>
+
+</div>
+
+
+</article>
+
+</div>
+
+
+<footer>
+
+<h2>
+SMARTTEST
+</h2>
+
+<p>
+Ujian Tertib, Pengumpulan Cepat, Nilai Akurat
+</p>
+
+<p>
+© 2026 Yudi Suryawan
+</p>
+
+</footer>
+
+
+</body>
+</html>
